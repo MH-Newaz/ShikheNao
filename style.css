@@ -713,3 +713,14 @@ nav .navigation ul li a:hover {
   cursor: pointer;
   color: #fff;
 }
+
+#map {
+  width: 100%;
+  height: 70vh;
+  margin-bottom: 8vw;
+}
+
+#map iframe{
+  width: 100%;
+  height: 100%;
+}
