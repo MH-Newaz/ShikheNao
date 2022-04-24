@@ -4,98 +4,230 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>contact</title>
 
+    <!-- font awesome cdn link  -->
     <link
       rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
     />
 
-    <title>ShikheNao</title>
-    <link rel="stylesheet" href="style.css"
+    <!-- swiper css link  -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+    />
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css" />
   </head>
-
   <body>
-    <!-- Navigation -->
-    <nav>
-      <img src="images/logo.png" alt="logo" />
+    <!-- header section starts  -->
 
-      <div class="navigation">
-        <ul>
-          <i id="menu-close" class="fas fa-time"></i>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="blog.html">Blog</a></li>
-          <li><a href="course.html">Courses</a></li>
-          <li><a class="active" href="contact.html">Contact</a></li>
-        </ul>
+    <header class="header">
+      <a href="#" class="logo"> <i class="fas fa-lightbulb"></i> ShikheNao </a>
+
+      <nav class="navbar">
+        <div id="close-navbar" class="fas fa-times"></div>
+        <a href="home.html">home</a>
+        <a href="about.html">about</a>
+        <a href="courses.html">courses</a>
+        <a href="contact.html">contact</a>
+      </nav>
+
+      <div class="icons">
+        <div id="account-btn" class="fas fa-user"></div>
+        <div id="menu-btn" class="fas fa-bars"></div>
       </div>
-    </nav>
+    </header>
 
-    <!-- Home -->
+    <!-- account form section starts  -->
 
-    <section id="about-home">
-      <h2>Contact Us</h2>
+    <div class="account-form">
+      <div id="close-form" class="fas fa-times"></div>
+
+      <div class="buttons">
+        <span class="btn active login-btn">login</span>
+        <span class="btn register-btn">register</span>
+      </div>
+
+      <form class="login-form active" action="">
+        <h3>login now</h3>
+        <input type="email" placeholder="enter your email" class="box" />
+        <input type="password" placeholder="enter your password" class="box" />
+        <div class="flex">
+          <input type="checkbox" name="" id="remember-me" />
+          <label for="remember-me">remember me</label>
+          <a href="#">forgot password?</a>
+        </div>
+        <input type="submit" value="login now" class="btn" />
+      </form>
+
+      <form class="register-form" action="">
+        <h3>register now</h3>
+        <input type="email" placeholder="enter your email" class="box" />
+        <input type="password" placeholder="enter your password" class="box" />
+        <input
+          type="password"
+          placeholder="confirm your password"
+          class="box"
+        />
+        <input type="submit" value="register now" class="btn" />
+      </form>
+    </div>
+
+    <!-- account form section ends -->
+
+    <!-- header section ends -->
+
+    <section class="heading-link">
+      <h3>contact us</h3>
+      <p><a href="home.html">home</a> / contact</p>
     </section>
 
-    <section id="contact">
-      <div class="getin">
-        <h2>Get in touch</h2>
-        <p>Looking for help? Fill the form and start a new adventure!</p>
+    <!-- contact section starts  -->
 
-        <div class="getin-details">
-          <h3>Headquarter</h3>
+    <section class="contact">
+      <h1 class="heading">get in touch</h1>
 
-          <div>
-            <i class="far fa-home get"></i>
-            <p>#233, Mirpur, Dhaka - 1216</p>
-          </div>
+      <div class="icons-container">
+        <div class="icons">
+          <i class="fas fa-clock"></i>
+          <h3>opening hours :</h3>
+          <p>12:01am to 11:59pm</p>
+        </div>
 
-          <h3>Phone</h3>
+        <div class="icons">
+          <i class="fas fa-phone"></i>
+          <h3>phone :</h3>
+          <p>+123-456-7890</p>
+        </div>
 
-          <div>
-            <i class="far fa-home get"></i>
-            <p>+8801829000670</p>
-          </div>
+        <div class="icons">
+          <i class="fas fa-envelope"></i>
+          <h3>email :</h3>
+          <p>shikhenoa@gmail.com</p>
+        </div>
 
-          <h3>Support</h3>
-
-          <div>
-            <i class="far fa-home get"></i>
-            <p>support.shikhenao@gmail.com</p>
-          </div>
+        <div class="icons">
+          <i class="fas fa-map"></i>
+          <h3>address :</h3>
+          <p>Mirpur DOHS, Dhaka-1216</p>
         </div>
       </div>
 
-      <div class="form">
-        <h4>Let's Connect</h4>
-        <p>Intejd dshbgvds djsbgfsd sdjbhfgk</p>
-
-        <div class="form-row">
-          <input type="text" placeholder="Your Name" />
-          <input type="text" placeholder="Email" />
+      <div class="row">
+        <div class="image">
+          <img src="images/contact-img.png" alt="" />
         </div>
 
-        <div class="form-col">
-          <input type="text" placeholder="Subject" />
-        </div>
-
-        <div class="form-col">
+        <form action="">
+          <h3>send us a message</h3>
+          <input type="text" placeholder="name" class="box" />
+          <input type="email" placeholder="email" class="box" />
+          <input type="number" placeholder="phone" class="box" />
           <textarea
             name=""
+            class="box"
+            placeholder="message"
             id=""
             cols="30"
-            rows="8"
-            placeholder="How can we help?"
+            rows="10"
           ></textarea>
+          <input type="submit" value="send message" class="btn" />
+        </form>
+      </div>
+    </section>
+
+    <!-- contact section ends -->
+
+    <!-- faq section starts  -->
+
+    <section class="faq">
+      <h1 class="heading">frequently asked questions</h1>
+
+      <div class="accordion-container">
+        <div class="accordion active">
+          <div class="accordion-heading">
+            <h3>how to contact for help?</h3>
+            <i class="fas fa-angle-down"></i>
+          </div>
+          <p class="accordion-content">
+            Just send us a message. We are available for 24/7.
+          </p>
         </div>
 
-        <div class="form-col">
-          <button>Send Message</button>
+        <div class="accordion">
+          <div class="accordion-heading">
+            <h3>what is the best career in 2022?</h3>
+            <i class="fas fa-angle-down"></i>
+          </div>
+          <p class="accordion-content">Follow your passion!!!</p>
+        </div>
+
+        <div class="accordion">
+          <div class="accordion-heading">
+            <h3>how much fees for web development?</h3>
+            <i class="fas fa-angle-down"></i>
+          </div>
+          <p class="accordion-content">It is completely Free!!!</p>
+        </div>
+
+        <div class="accordion">
+          <div class="accordion-heading">
+            <h3>can I choose my own tutor?</h3>
+            <i class="fas fa-angle-down"></i>
+          </div>
+          <p class="accordion-content">Yes, it's your choice.</p>
+        </div>
+
+        <div class="accordion">
+          <div class="accordion-heading">
+            <h3>what payment methods are availabe?</h3>
+            <i class="fas fa-angle-down"></i>
+          </div>
+          <p class="accordion-content">
+            Our Courses are completely free of cost.
+          </p>
+        </div>
+
+        <div class="accordion">
+          <div class="accordion-heading">
+            <h3>Which languages can courses be taught in?</h3>
+            <i class="fas fa-angle-down"></i>
+          </div>
+          <p class="accordion-content">For now, only English.</p>
         </div>
       </div>
     </section>
 
-    <!-- Map -->
+    <!-- faq section ends -->
+
+    <!-- logo slider starts  -->
+
+    <!-- 
+    <section class="logo-container">
+      <div class="swiper logo-slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="images/partner-logo-1.png" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img src="images/partner-logo-2.png" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img src="images/partner-logo-3.png" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img src="images/partner-logo-4.png" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img src="images/partner-logo-5.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+    -->
 
     <section id="map">
       <iframe
@@ -106,5 +238,72 @@
         referrerpolicy="no-referrer-when-downgrade"
       ></iframe>
     </section>
+
+    <!-- logo slider ends -->
+
+    <!-- footer section starts  -->
+
+    <section class="footer">
+      <div class="box-container">
+        <div class="box">
+          <h3><i class="fas fa-lightbulb"></i> ShikheNao</h3>
+          <p>
+            Skills for your present (and your future). <br />
+            Get started with us.
+          </p>
+          <div class="share">
+            <a href="#" class="fab fa-linkedin"></a>
+            <a href="#" class="fab fa-twitter"></a>
+            <a href="#" class="fab fa-facebook-f"></a>
+
+            <a href="#" class="fab fa-instagram"></a>
+          </div>
+        </div>
+
+        <div class="box">
+          <h3>quick links</h3>
+          <a href="home.html" class="link">Home</a>
+          <a href="about.html" class="link">About</a>
+          <a href="courses.html" class="link">Courses</a>
+          <a href="contact.html" class="link">Contact</a>
+        </div>
+
+        <div class="box">
+          <h3>useful links</h3>
+          <a href="#" class="link">Help Center</a>
+          <a href="#" class="link">Ask Questions</a>
+          <a href="#" class="link">Send Feedback</a>
+          <a href="#" class="link">Private Policy</a>
+          <a href="#" class="link">Terms of Use</a>
+        </div>
+
+        <div class="box">
+          <h3>Newsletter</h3>
+          <p>Subscribe for latest upadates</p>
+          <form action="">
+            <input
+              type="email"
+              name=""
+              placeholder="Enter your email"
+              id=""
+              class="email"
+            />
+            <input type="submit" value="subscribe" class="btn" />
+          </form>
+        </div>
+      </div>
+
+      <div class="credit">
+        created by <span>ZERO GRAVITY </span> . all rights reserved!
+      </div>
+    </section>
+
+    <!-- footer section ends -->
+
+    <!-- swiper js link  -->
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+    <!-- custom js file link  -->
+    <script src="js/script.js"></script>
   </body>
 </html>
